@@ -4,7 +4,7 @@ local gitsigns = require 'gitsigns'
 local lualine = require 'lualine'
 local noice = require 'noice'
 local notify = require 'notify'
-local tokyonight = require 'tokyonight'
+local catppuccin = require 'catppuccin'
 
 local function init()
     colorizer.setup {}
@@ -16,7 +16,7 @@ local function init()
     lualine.setup {
         options = {
             extensions = { "fzf", "quickfix" },
-            theme = 'tokyonight',
+            theme = 'catppuccin',
         },
     }
 
@@ -41,7 +41,7 @@ local function init()
         },
     }
 
-    tokyonight.setup {
+    catppuccin.setup {
         on_highlights = function(hl, c)
             local prompt = "#2d3149"
             hl.TelescopeNormal = {
@@ -76,7 +76,7 @@ local function init()
         transparent = true,
     }
 
-    vim.cmd [[colorscheme tokyonight-night]]
+    vim.cmd [[colorscheme catppuccin]]
 end
 
 return {
