@@ -17,7 +17,7 @@ in rec {
     pkgs = legacyPackages.${system};
   in
     buildVimPlugin {
-      name = "TheAltF4Stream";
+      name = "gvarph.nvim";
       postInstall = ''
         rm -rf $out/.envrc
         rm -rf $out/.gitignore
@@ -35,7 +35,7 @@ in rec {
     inherit (pkgs) vimPlugins;
     CopilotChat-nvim = mkCopilotChat {inherit system;};
     pkgs = legacyPackages.${system};
-    TheAltF4Stream-nvim = mkVimPlugin {inherit system;};
+    gvarph-nvim = mkVimPlugin {inherit system;};
   in [
     # languages
     vimPlugins.nvim-lspconfig
@@ -71,7 +71,7 @@ in rec {
     vimPlugins.trouble-nvim
 
     # configuration
-    TheAltF4Stream-nvim
+    gvarph-nvim
   ];
 
   mkExtraPackages = {system}: let
@@ -119,7 +119,7 @@ in rec {
 
   mkExtraConfig = ''
     lua << EOF
-      require 'TheAltF4Stream'.init()
+      require 'gvarph'.init()
     EOF
   '';
 

@@ -1,8 +1,8 @@
 # gvarph.nvim
 
-[![Test flake](https://github.com/ALT-F4-LLC/thealtf4stream.nvim/actions/workflows/flake.yaml/badge.svg)](https://github.com/ALT-F4-LLC/thealtf4stream.nvim/actions/workflows/flake.yaml)
+[![Test flake](https://github.com/gvarph/gvarph.nvim/actions/workflows/flake.yaml/badge.svg)](https://github.com/gvarph/gvarph.nvim/actions/workflows/flake.yaml)
 
-![Preview](https://github.com/ALT-F4-LLC/thealtf4stream.nvim/blob/main/lib/preview.webp)
+![Preview](https://github.com/gvarph/gvarph.nvim/blob/main/lib/preview.webp)
 
 ## Install
 
